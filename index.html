@@ -81,8 +81,8 @@
           let newIntsArr = [];
           let productOfNAndIndex;
           for (let index in this.ints) {
-            productOfNAndIndex = Math.abs(n) * index;
-            if (this.ints[productOfNAndIndex] < this.ints.length)
+            productOfNAndIndex = n * index;
+            if (this.ints[productOfNAndIndex] <= this.ints.length)
               newIntsArr.push(this.ints[productOfNAndIndex]);
           }
           return newIntsArr;
